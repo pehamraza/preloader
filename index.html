@@ -71,6 +71,20 @@
 		  					<code>.hideit{display: none;}</code>
 						</li>
 						
+
+						<li><h3>Hide Loading div and show Page</h3>
+		  					<p>
+			  				Use onload attribute on body tag to call the function on the page load,
+			  				<code> &lt;body onload="show_page()"&gt;</code>
+			  				On page load we need to hide the loading div and show the original loaded web page. The javascript show_page() function removes the class using jquery-1y's removeClass() function to remove the class named "hideit". 
+		  					<code>function show_page()<br />
+									{<br />
+										&nbsp; $('#loading').hide();<br />
+										&nbsp; $('#content').removeClass('hideit');<br />
+									}<br />
+						</code>
+						</li>
+
 	  				</ol>
 	  			</div>
 	  				
@@ -90,17 +104,15 @@
 							</p>
 		  				</li>
 
-	  					<li><h3>Hide Loading div and show Page</h3>
+	  					<li><h3>Call the javascript function on body tag</h3>
 		  					<p>
 			  				Use onload attribute on body tag to call the function on the page load,
 			  				<code> &lt;body onload="show_page()"&gt;</code>
-			  				On page load we need to hide the loading div and show the original loaded web page. The javascript show_page() function removes the class using jquery-1y's removeClass() function to remove the class named "hideit". 
-		  					<code>function show_page()<br />
-									{<br />
-										&nbsp; $('#loading').hide();<br />
-										&nbsp; $('#content').removeClass('hideit');<br />
-									}<br />
-						</code>
+						</li>
+
+						<li><h3>The Best Part</h3>
+		  					<p>
+			  				The best part is that the script will also preload the images. You don't need to add any third party javascript plugins to do that. :)
 						</li>
 						
 	  				</ol>
