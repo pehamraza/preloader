@@ -1,0 +1,45 @@
+/*************************************
+CSS written by Peham Raza
+on 21 December 2013
+**********************************/
+
+body{margin: 0; padding: 0; background: #eee; font-family: arial, verdana; }
+#content{background-color: #fff; width: 960px; padding: 10px; margin: 10 auto; box-shadow: 0px 0px 5px #ccc;}
+#content a#download{color: #D86666; font-weight: bold; text-decoration: underline!important; }
+/*------------ GENERAL CSS */
+h1, h3{color: #878CDC;}
+h2{color: #434DD8}
+p{color: #555; padding: 0px 0px 10px 0px; margin: 0}
+p.intro{font-size: 14px; font-style: italic; width: 80%; text-align: center; margin-bottom: 10px;}
+a{color: #777;}
+
+/*------------ CSS for HEADER */
+#content #header{border-bottom: 1px solid #ddd; padding: 10px 0 15px;}
+#content #header #header_desc{float: left; width: 55%;}
+#content #header img#logo{width: 60px; height: 50px; float: left; margin-right: 20px; margin-top: 12px;}
+#content #header h1{color: #193B65; font-style: italic; font-size: 20px;}
+#content #header h3{color: #777; font-style: italic; font-size: 14px; font-weight: normal;  padding: 0; margin-left: 350px; margin-top: -10px;}
+#content #header h3 a{color: #777; text-decoration: none;}
+#content #header h3 a:hover{text-decoration: underline;}
+
+/*------------ CSS for MAIN content */
+#content #main{text-align: left; font-size: 12px;}
+#content #main #main_top{ border-bottom: 1px solid #ddd;  border-top: 2px solid #cdc; padding: 0px 0px 10px 0px }
+#content #main #main_right{margin-left: 10px; float: right; width: 49%;}
+#content #main #main_left{width: 48%; float: left; border-right: 1px solid #ddd;}
+#content #main #main_left img{height: 200px; padding: 10px; border-left: 1px solid #ccc;}
+code{padding: 10px; display: block; font-style: italic; display: block; color: #193B6a; font-weight: bold;}
+ol.keypoints{margin: 0;  padding: 0;}
+ol.keypoints li{padding: 0; margin:0  30px ; }
+
+
+/*------------ CSS for MENU */
+#content #menu{text-align: right; float: right;width: 33%; margin-right: 10px; margin-top: -10px; list-style-type: none; padding: 0;}
+#content #menu li{display: inline;}
+#content #menu li a{font-size: 12px; font-style: italic; text-decoration: none;}
+#content #menu li a:hover{ color: #444;}
+
+/*------------ CSS for FOOTER */
+ #content #footer{border-top: 1px solid #ddd;}
+#content #footer p{padding: 10px; text-align: center; }
+.clear{clear: both; height: 0px;}

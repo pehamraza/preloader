@@ -1,0 +1,122 @@
+<html>
+  <head>
+ 	    <title>Preloader Script - Page Loading Script</title>
+    	<link rel="stylesheet" href="loading.css">
+		<link rel="stylesheet" href="css.css">
+		<META NAME="description" CONTENT="Preloader Script - Page Loading Script shows a loading effect while the complete page loads - written by peham raza">
+		<META NAME="keywords" CONTENT="preloader, preloader script, jquery preloader, page loading, simple page loading effect">
+		<META NAME="robot" CONTENT="index,follow">
+		<META NAME="author" CONTENT="Peham Raza">
+		<META NAME="language" CONTENT="English">
+  </head>
+
+  <body onload="show_page()">
+  	<div id="loading">
+  		<h3>Loading...</h3>
+		<img src="loading.gif" alt="Loading" /> 
+  	</div>
+
+	<div id="content" class="hideit">
+
+	  		<div id="header">
+	  			
+	  			<a href=""><img id="logo" src="big_image.jpg" alt="" /></a>
+				
+				<div id="header_desc">
+					<h1>Preloader Script - Page Loading Script</h1>
+		  			<h3>By <a href="http://pehamraza.com">Peham Raza</a></h3>
+				</div>
+
+	  			<ul id="menu">
+	  				<li><a href="">Home</a></li>
+	  				<li><a href="http://blog.pehamraza.com">Blog</a></li>
+	  				<li><a href="http://github.com/pehamraza">GitHub</a></li>
+	  				<li><a href="#">Fork on Github</a></li>
+	  				<li><a href="preloader_by_peham.zip" id="download">Download It</a></li>
+	  			</ul>
+	  			<div class="clear"></div>
+	  		</div>
+
+	  		<div id="main">
+	  			<div id="main_top">
+					<h2>Introduction</h2>
+					<p class="intro">
+						This is a very simple and interesting page loading script. I have been searching for best preloader script on the internet from quite a long time and after trying many possible solutions I have got the simplest way to make a preloader that does not only loads the content but also the images. It is a very simple preloader script. If you need any further help do not hesitate to email me at <a href="mailto:m@pehamraza.com">m@pehamraza.com</a>
+					</p>
+	  			</div>
+	  			<div class="clear"></div>
+	  			<div id="main_left">
+	  				
+	  				<!-- <img src="http://blog.rxprep.com/wp-content/uploads/2010/09/train-icon.png" alt="" class="keypoints_img" /> -->
+
+	  				<h2>Step by Step Guide:</h2>
+	  				<ol class="keypoints">
+
+		  				<li><h3>The Loading Div</h3>
+			  				<p>
+				  				Make a div that will show the loading effect while the page will be loading,
+			  					<code> 			&lt;div id="loading"&gt;<br />
+										  		&lt;h3&gt;Loading...&lt;/h3&gt;<br />
+												&lt;img src="loading.gif" alt="Loading" /&gt; <br />
+										  		&lt;/div&gt;
+										  </code>
+								
+							</p>
+		  				</li>
+
+	  					<li><h3>Hide the main content</h3>
+		  					<p>
+			  				Add class on the main content div to hide it before complete page load, we used a class named "hideit" on the main content div that has an id "content"
+		  					<code>&lt;div id="content" class="hideit"&gt;</code>
+		  					The css for the "hideit" class is just,
+		  					<code>.hideit{display: none;}</code>
+						</li>
+						
+	  				</ol>
+	  			</div>
+	  				
+	  			<div id="main_right">
+	  				
+
+
+	  				<h2>The Key Points:</h2>
+	  				<ol class="keypoints">
+
+		  				<li><h3>Use Display Attribute</h3>
+			  				<p>
+				  				Most of people have been trying the script by hidding the main content div using the following css attribute,
+			  					<code>&raquo; visibility: hidden;</code>
+								But instead of using the visibility attribute you will have to use,
+								<code>&raquo; display: none;</code>
+							</p>
+		  				</li>
+
+	  					<li><h3>Hide Loading div and show Page</h3>
+		  					<p>
+			  				Use onload attribute on body tag to call the function on the page load,
+			  				<code> &lt;body onload="show_page()"&gt;</code>
+			  				On page load we need to hide the loading div and show the original loaded web page. The javascript show_page() function removes the class using jquery-1y's removeClass() function to remove the class named "hideit". 
+		  					<code>function show_page()<br />
+									{<br />
+										&nbsp; $('#loading').hide();<br />
+										&nbsp; $('#content').removeClass('hideit');<br />
+									}<br />
+						</code>
+						</li>
+						
+	  				</ol>
+
+	  			
+	  		</div>
+
+<div class="clear"></div>
+	<div id="footer"><p>This Tutorial is written as a contribution to the Open Source Community by Peham Raza</p></div>
+	  	</div>
+	</div>
+
+	  
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js.js"></script>
+  </body>
+
+</html>

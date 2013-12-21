@@ -1,0 +1,9 @@
+/*************************************
+CSS written by Peham Raza
+on 21 December 2013
+**********************************/
+
+#loading{color: white; width: 300px; margin: 0 auto; text-align: center; margin-top: 200px;}
+#loading h3{color: #193B65; margin: 0;}
+#loading img{width: 200px;}
+.hideit{display: none;}
